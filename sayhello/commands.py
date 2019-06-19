@@ -32,7 +32,7 @@ def forge(count):
     db.drop_all()
     db.create_all()
 
-    fake = Faker()
+    fake = Faker('zh_CN')
     click.echo('Working...')
 
     for i in range(count):
